@@ -1,0 +1,34 @@
+name: Delphi Build
+
+on:
+  push:
+    branches:
+      - main
+      - 'feature/**'
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: [self-hosted, windows]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build project
+        shell: cmd
+        run: |
+          call "C:\Program Files (x86)\Embarcadero\Studio\23.0\bin\rsvars.bat"
+
+          echo.> AlgorithmShowcase.rc
+          brcc32.exe AlgorithmShowcase.rc
+
+          dcc32.exe AlgorithmShowcase.dpr -B
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: algorithm-showcase-exe
+          path: src\AlgorithmShowcase.exe
