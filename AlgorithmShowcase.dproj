@@ -110,6 +110,7 @@
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
         <UsePackages>true</UsePackages>
         <DCC_MapFile>3</DCC_MapFile>
+        <DCC_Define>madExcept;$(DCC_Define)</DCC_Define>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -137,6 +138,7 @@
         <DCCReference Include="src\Algorithms\uQuickSort.pas"/>
         <DCCReference Include="src\Algorithms\uSelectionSort.pas"/>
         <DCCReference Include="src\Algorithms\uInsertionSort.pas"/>
+        <DCCReference Include="src\Algorithms\uShellSort.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
