@@ -10,8 +10,9 @@ uses
   cxLabel, cxDataStorage, cxVariants, cxGeometry, cxCustomCanvas, dxCoreClasses,
   dxCoreGraphics, dxCustomData, dxChartCore, dxChartData, dxChartLegend,
   dxChartSimpleDiagram, dxChartXYDiagram, dxChartXYSeriesBarView, dxChartXYSeriesLineView,
-  dxChartXYSeriesAreaView, dxChartMarkers, dxChartPalette, dxChartControl,
-  dxUIAClasses, dxFramedControl, dxPanel, uInterfaces, uSortingRegistry;
+  dxChartXYSeriesAreaView, dxChartMarkers,  dxChartControl, dxFramedControl, dxPanel, uInterfaces, uSortingRegistry,
+  dxSkinsCore, dxSkinBasic, dxSkinOffice2019Black, dxSkinOffice2019Colorful,
+  dxSkinOffice2019DarkGray, dxSkinOffice2019White, dxSkinTheBezier, dxSkinWXI;
 
 type
   TfrmMain = class(TForm)

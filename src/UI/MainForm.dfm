@@ -25,7 +25,6 @@ object frmMain: TfrmMain
       Left = 8
       Top = 8
       Caption = 'Size'
-      TabOrder = 0
     end
     object cbSortingType: TcxComboBox
       Left = 109
@@ -39,7 +38,6 @@ object frmMain: TfrmMain
       Left = 109
       Top = 8
       Caption = 'Sorting type'
-      TabOrder = 2
     end
     object btnStart: TButton
       Left = 286
@@ -136,7 +134,6 @@ object frmMain: TfrmMain
           Align = alClient
           Properties.Alignment.Horz = taCenter
           Properties.Alignment.Vert = taVCenter
-          TabOrder = 0
           AnchorX = 146
           AnchorY = 17
         end
@@ -157,7 +154,6 @@ object frmMain: TfrmMain
           Align = alClient
           Properties.Alignment.Horz = taCenter
           Properties.Alignment.Vert = taVCenter
-          TabOrder = 0
           AnchorX = 146
           AnchorY = 17
         end
