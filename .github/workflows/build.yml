@@ -22,10 +22,7 @@ jobs:
         run: |
           call "C:\Program Files (x86)\Embarcadero\Studio\23.0\bin\rsvars.bat"
 
-          echo.> AlgorithmShowcase.rc
-          brcc32.exe AlgorithmShowcase.rc
-
-          dcc32.exe AlgorithmShowcase.dpr -B
+          dcc64.exe AlgorithmShowcase.dpr -B -U"%DXVCL_RS29%"
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
