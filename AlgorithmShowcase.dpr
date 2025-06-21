@@ -13,7 +13,8 @@ uses
   uShellSort in 'src\Algorithms\uShellSort.pas',
   uMergeSort in 'src\Algorithms\uMergeSort.pas',
   uHeapSort in 'src\Algorithms\uHeapSort.pas',
-  uIntroSort in 'src\Algorithms\uIntroSort.pas';
+  uIntroSort in 'src\Algorithms\uIntroSort.pas',
+  uCountingSort in 'src\Algorithms\uCountingSort.pas';
 
 {$R *.res}
 
