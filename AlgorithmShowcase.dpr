@@ -2,13 +2,17 @@ program AlgorithmShowcase;
 
 uses
   Vcl.Forms,
-  MainForm in 'src\UI\MainForm.pas' {Form1};
+  MainForm in 'src\UI\MainForm.pas' {frmMain},
+  uBubbleSort in 'src\Algorithms\uBubbleSort.pas',
+  uDataGenerator in 'src\Core\uDataGenerator.pas',
+  uInterfaces in 'src\Core\uInterfaces.pas',
+  uSortingRegistry in 'src\Core\uSortingRegistry.pas';
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmMain, frmMain);
   Application.Run;
 end.
