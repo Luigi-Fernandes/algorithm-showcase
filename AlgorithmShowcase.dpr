@@ -15,7 +15,9 @@ uses
   uQuickSort in 'src\Algorithms\uQuickSort.pas',
   uSelectionSort in 'src\Algorithms\uSelectionSort.pas',
   uInsertionSort in 'src\Algorithms\uInsertionSort.pas',
-  uShellSort in 'src\Algorithms\uShellSort.pas';
+  uShellSort in 'src\Algorithms\uShellSort.pas',
+  uMergeSort in 'src\Algorithms\uMergeSort.pas',
+  uHeapSort in 'src\Algorithms\uHeapSort.pas';
 
 {$R *.res}
 
