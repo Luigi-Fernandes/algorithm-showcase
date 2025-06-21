@@ -103,10 +103,13 @@
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+        <DCC_Define>madExcept;$(DCC_Define)</DCC_Define>
+        <DCC_MapFile>3</DCC_MapFile>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
         <UsePackages>true</UsePackages>
+        <DCC_MapFile>3</DCC_MapFile>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -126,12 +129,12 @@
         </DelphiCompile>
         <DCCReference Include="src\UI\MainForm.pas">
             <Form>frmMain</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\Algorithms\uBubbleSort.pas"/>
         <DCCReference Include="src\Core\uDataGenerator.pas"/>
         <DCCReference Include="src\Core\uInterfaces.pas"/>
         <DCCReference Include="src\Core\uSortingRegistry.pas"/>
+        <DCCReference Include="src\Algorithms\uQuickSort.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

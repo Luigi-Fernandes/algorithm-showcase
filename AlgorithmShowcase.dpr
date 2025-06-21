@@ -6,7 +6,8 @@ uses
   uBubbleSort in 'src\Algorithms\uBubbleSort.pas',
   uDataGenerator in 'src\Core\uDataGenerator.pas',
   uInterfaces in 'src\Core\uInterfaces.pas',
-  uSortingRegistry in 'src\Core\uSortingRegistry.pas';
+  uSortingRegistry in 'src\Core\uSortingRegistry.pas',
+  uQuickSort in 'src\Algorithms\uQuickSort.pas';
 
 {$R *.res}
 
