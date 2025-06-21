@@ -2,33 +2,35 @@ name: Delphi Build
 
 on:
   push:
-    branches:
-      - main
-      - 'feature/**'
+    branches: [ main, 'feature/**' ]
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   build:
-    runs-on: [self-hosted, windows]
+    runs-on: [ self-hosted, windows ]
 
     env:
-      DXVCL_RS29: 'C:\Program Files (x86)\DevExpress\VCL\Library\RS29\Win64'
-      
+      DEVEXPRESS_RS29: 'C:\Program Files (x86)\DevExpress\VCL\Library\RS29\Win64'
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3        
+    - name: Checkout code
+      uses: actions/checkout@v4
 
-      - name: Build project
-        shell: cmd
-        run: |
-          call "C:\Program Files (x86)\Embarcadero\Studio\23.0\bin\rsvars.bat"
+    - name: Build project
+      shell: cmd
+      run: |
+        call "C:\Program Files (x86)\Embarcadero\Studio\23.0\bin\rsvars.bat"
 
-          dcc64.exe AlgorithmShowcase.dpr -B -U"%DXVCL_RS29%"
+        dcc64.exe "%GITHUB_WORKSPACE%\AlgorithmShowcase.dpr"^
+          -B -Q^
+          -NS"System;Xml;Data;Datasnap;Web;Soap;Vcl;Winapi"^
+          -U"%DEVEXPRESS_RS29%;%BDS%\lib\win64\release"^
+          -O"%BDS%\lib\win64\release"^
+          -L"%BDS%\lib\win64\release"
 
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: algorithm-showcase-exe
-          path: src\AlgorithmShowcase.exe
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: algorithm-showcase-exe
+        path: AlgorithmShowcase.exe
