@@ -7,7 +7,8 @@ uses
   uDataGenerator in 'src\Core\uDataGenerator.pas',
   uInterfaces in 'src\Core\uInterfaces.pas',
   uSortingRegistry in 'src\Core\uSortingRegistry.pas',
-  uQuickSort in 'src\Algorithms\uQuickSort.pas';
+  uQuickSort in 'src\Algorithms\uQuickSort.pas',
+  uSelectionSort in 'src\Algorithms\uSelectionSort.pas';
 
 {$R *.res}
 
