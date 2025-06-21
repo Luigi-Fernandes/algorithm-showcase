@@ -136,6 +136,7 @@
         <DCCReference Include="src\Core\uSortingRegistry.pas"/>
         <DCCReference Include="src\Algorithms\uQuickSort.pas"/>
         <DCCReference Include="src\Algorithms\uSelectionSort.pas"/>
+        <DCCReference Include="src\Algorithms\uInsertionSort.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

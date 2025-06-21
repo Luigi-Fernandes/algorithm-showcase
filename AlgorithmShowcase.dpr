@@ -8,7 +8,8 @@ uses
   uInterfaces in 'src\Core\uInterfaces.pas',
   uSortingRegistry in 'src\Core\uSortingRegistry.pas',
   uQuickSort in 'src\Algorithms\uQuickSort.pas',
-  uSelectionSort in 'src\Algorithms\uSelectionSort.pas';
+  uSelectionSort in 'src\Algorithms\uSelectionSort.pas',
+  uInsertionSort in 'src\Algorithms\uInsertionSort.pas';
 
 {$R *.res}
 
