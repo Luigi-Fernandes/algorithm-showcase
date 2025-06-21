@@ -17,7 +17,8 @@ uses
   uInsertionSort in 'src\Algorithms\uInsertionSort.pas',
   uShellSort in 'src\Algorithms\uShellSort.pas',
   uMergeSort in 'src\Algorithms\uMergeSort.pas',
-  uHeapSort in 'src\Algorithms\uHeapSort.pas';
+  uHeapSort in 'src\Algorithms\uHeapSort.pas',
+  uIntroSort in 'src\Algorithms\uIntroSort.pas';
 
 {$R *.res}
 

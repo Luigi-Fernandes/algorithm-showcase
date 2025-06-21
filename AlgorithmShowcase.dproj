@@ -141,6 +141,7 @@
         <DCCReference Include="src\Algorithms\uShellSort.pas"/>
         <DCCReference Include="src\Algorithms\uMergeSort.pas"/>
         <DCCReference Include="src\Algorithms\uHeapSort.pas"/>
+        <DCCReference Include="src\Algorithms\uIntroSort.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
