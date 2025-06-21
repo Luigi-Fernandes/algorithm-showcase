@@ -15,7 +15,8 @@ jobs:
 
     env:
       DXVCL_RS29: 'C:\Program Files (x86)\DevExpress\VCL\Library\RS29\Win64'
-      
+      BDSLIB: 'C:\Program Files (x86)\Embarcadero\Studio\23.0\lib\win64\release;C:\Program Files (x86)\Embarcadero\Studio\23.0\source\rtl\common'
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3        
@@ -25,7 +26,7 @@ jobs:
         run: |
           call "C:\Program Files (x86)\Embarcadero\Studio\23.0\bin\rsvars.bat"
 
-          dcc64.exe AlgorithmShowcase.dpr -B -U"%DXVCL_RS29%"
+          dcc64.exe AlgorithmShowcase.dpr -B -U"%DXVCL_RS29%;%BDSLIB%"
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
