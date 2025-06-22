@@ -13,7 +13,15 @@ uses
   uShellSort in 'src\Algorithms\uShellSort.pas',
   uMergeSort in 'src\Algorithms\uMergeSort.pas',
   uHeapSort in 'src\Algorithms\uHeapSort.pas',
-  uIntroSort in 'src\Algorithms\uIntroSort.pas';
+  uIntroSort in 'src\Algorithms\uIntroSort.pas',
+  uCountingSort in 'src\Algorithms\uCountingSort.pas',
+  uRadixSort in 'src\Algorithms\uRadixSort.pas',
+  uBucketSort in 'src\Algorithms\uBucketSort.pas',
+  uTimSort in 'src\Algorithms\uTimSort.pas',
+  uDualPivotQuickSort in 'src\Algorithms\uDualPivotQuickSort.pas',
+  uPDQSort in 'src\Algorithms\uPDQSort.pas',
+  uFlashSort in 'src\Algorithms\uFlashSort.pas',
+  uCombSort in 'src\Algorithms\uCombSort.pas';
 
 {$R *.res}
 
