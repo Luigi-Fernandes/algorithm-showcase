@@ -25,7 +25,8 @@ uses
   uTimSort in 'src\Algorithms\uTimSort.pas',
   uDualPivotQuickSort in 'src\Algorithms\uDualPivotQuickSort.pas',
   uPDQSort in 'src\Algorithms\uPDQSort.pas',
-  uFlashSort in 'src\Algorithms\uFlashSort.pas';
+  uFlashSort in 'src\Algorithms\uFlashSort.pas',
+  uCombSort in 'src\Algorithms\uCombSort.pas';
 
 {$R *.res}
 

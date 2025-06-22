@@ -152,6 +152,7 @@
         <DCCReference Include="src\Algorithms\uDualPivotQuickSort.pas"/>
         <DCCReference Include="src\Algorithms\uPDQSort.pas"/>
         <DCCReference Include="src\Algorithms\uFlashSort.pas"/>
+        <DCCReference Include="src\Algorithms\uCombSort.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
