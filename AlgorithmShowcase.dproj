@@ -147,6 +147,7 @@
         <DCCReference Include="src\Algorithms\uIntroSort.pas"/>
         <DCCReference Include="src\Algorithms\uCountingSort.pas"/>
         <DCCReference Include="src\Algorithms\uRadixSort.pas"/>
+        <DCCReference Include="src\Algorithms\uBucketSort.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

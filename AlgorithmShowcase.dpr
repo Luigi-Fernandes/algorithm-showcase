@@ -20,7 +20,8 @@ uses
   uHeapSort in 'src\Algorithms\uHeapSort.pas',
   uIntroSort in 'src\Algorithms\uIntroSort.pas',
   uCountingSort in 'src\Algorithms\uCountingSort.pas',
-  uRadixSort in 'src\Algorithms\uRadixSort.pas';
+  uRadixSort in 'src\Algorithms\uRadixSort.pas',
+  uBucketSort in 'src\Algorithms\uBucketSort.pas';
 
 {$R *.res}
 
