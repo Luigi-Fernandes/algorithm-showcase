@@ -1,11 +1,6 @@
 program AlgorithmShowcase;
 
 uses
-  madExcept,
-  madLinkDisAsm,
-  madListHardware,
-  madListProcesses,
-  madListModules,
   Vcl.Forms,
   MainForm in 'src\UI\MainForm.pas' {frmMain},
   uBubbleSort in 'src\Algorithms\uBubbleSort.pas',

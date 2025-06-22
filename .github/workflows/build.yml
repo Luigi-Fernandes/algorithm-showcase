@@ -11,9 +11,7 @@ jobs:
     runs-on: [ self-hosted, windows ]
 
     env:
-      BDS: 'C:\Program Files (x86)\Embarcadero\Studio\23.0'
       DEVEXPRESS_RS29: 'C:\Program Files (x86)\DevExpress\VCL\Library\RS29\Win64'
-      MADEXCEPT_RS29: 'C:\Program Files (x86)\madCollection\madExcept\BDS23\win64'
 
     steps:
     - name: Checkout code
@@ -22,12 +20,13 @@ jobs:
     - name: Build project
       shell: cmd
       run: |
-        call "%BDS%\bin\rsvars.bat"
-        dcc64.exe "%GITHUB_WORKSPACE%\AlgorithmShowcase.dpr" ^
-          -B -Q ^
-          -NS"System;Xml;Data;Datasnap;Web;Soap;Vcl;Winapi" ^
-          -U"%DEVEXPRESS_RS29%;%MADEXCEPT_RS29%;%BDS%\lib\win64\release" ^
-          -O"%BDS%\lib\win64\release" ^
+        call "C:\Program Files (x86)\Embarcadero\Studio\23.0\bin\rsvars.bat"
+
+        dcc64.exe "%GITHUB_WORKSPACE%\AlgorithmShowcase.dpr"^
+          -B -Q^
+          -NS"System;Xml;Data;Datasnap;Web;Soap;Vcl;Winapi"^
+          -U"%DEVEXPRESS_RS29%;%BDS%\lib\win64\release"^
+          -O"%BDS%\lib\win64\release"^
           -L"%BDS%\lib\win64\release"
 
     - name: Upload build artifact
