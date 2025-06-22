@@ -24,7 +24,8 @@ uses
   uBucketSort in 'src\Algorithms\uBucketSort.pas',
   uTimSort in 'src\Algorithms\uTimSort.pas',
   uDualPivotQuickSort in 'src\Algorithms\uDualPivotQuickSort.pas',
-  uPDQSort in 'src\Algorithms\uPDQSort.pas';
+  uPDQSort in 'src\Algorithms\uPDQSort.pas',
+  uFlashSort in 'src\Algorithms\uFlashSort.pas';
 
 {$R *.res}
 
