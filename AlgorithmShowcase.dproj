@@ -149,6 +149,7 @@
         <DCCReference Include="src\Algorithms\uRadixSort.pas"/>
         <DCCReference Include="src\Algorithms\uBucketSort.pas"/>
         <DCCReference Include="src\Algorithms\uTimSort.pas"/>
+        <DCCReference Include="src\Algorithms\uDualPivotQuickSort.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

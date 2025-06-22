@@ -22,7 +22,8 @@ uses
   uCountingSort in 'src\Algorithms\uCountingSort.pas',
   uRadixSort in 'src\Algorithms\uRadixSort.pas',
   uBucketSort in 'src\Algorithms\uBucketSort.pas',
-  uTimSort in 'src\Algorithms\uTimSort.pas';
+  uTimSort in 'src\Algorithms\uTimSort.pas',
+  uDualPivotQuickSort in 'src\Algorithms\uDualPivotQuickSort.pas';
 
 {$R *.res}
 
