@@ -122,6 +122,10 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+        <DCC_Define>madExcept;LeakChecking;$(DCC_Define)</DCC_Define>
+        <DCC_MapFile>3</DCC_MapFile>
+        <DCC_DebugInformation>2</DCC_DebugInformation>
+        <DCC_LocalDebugSymbols>true</DCC_LocalDebugSymbols>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
@@ -142,6 +146,7 @@
         <DCCReference Include="src\Algorithms\uHeapSort.pas"/>
         <DCCReference Include="src\Algorithms\uIntroSort.pas"/>
         <DCCReference Include="src\Algorithms\uCountingSort.pas"/>
+        <DCCReference Include="src\Algorithms\uRadixSort.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

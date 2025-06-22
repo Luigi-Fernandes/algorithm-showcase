@@ -1,6 +1,11 @@
 program AlgorithmShowcase;
 
 uses
+  madExcept,
+  madLinkDisAsm,
+  madListHardware,
+  madListProcesses,
+  madListModules,
   Vcl.Forms,
   MainForm in 'src\UI\MainForm.pas' {frmMain},
   uBubbleSort in 'src\Algorithms\uBubbleSort.pas',
@@ -14,7 +19,8 @@ uses
   uMergeSort in 'src\Algorithms\uMergeSort.pas',
   uHeapSort in 'src\Algorithms\uHeapSort.pas',
   uIntroSort in 'src\Algorithms\uIntroSort.pas',
-  uCountingSort in 'src\Algorithms\uCountingSort.pas';
+  uCountingSort in 'src\Algorithms\uCountingSort.pas',
+  uRadixSort in 'src\Algorithms\uRadixSort.pas';
 
 {$R *.res}
 
